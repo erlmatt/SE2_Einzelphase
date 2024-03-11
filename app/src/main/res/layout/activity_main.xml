@@ -17,7 +17,6 @@
         android:layout_marginEnd="108dp"
         android:ems="10"
         android:inputType="number"
-        android:text="Gib eine Zahl ein"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -41,8 +40,37 @@
         android:id="@+id/output"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
-        tools:layout_editor_absoluteX="171dp"
-        tools:layout_editor_absoluteY="478dp" />
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="63dp"
+        android:layout_marginEnd="176dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sendButton" />
+
+    <TextView
+        android:id="@+id/outputTwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="176dp"
+        android:text=""
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/output" />
+
+    <TextView
+        android:id="@+id/textMatrikelnummer"
+        android:layout_width="0dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="110dp"
+        android:text="Gib deine Matrikelnummer ein:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
